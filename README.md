@@ -1,2 +1,2 @@
-# To-Do-List-Node-
+# Weight Classifier-
 This is a to do list created using HTML, CSS and Nodejs.
