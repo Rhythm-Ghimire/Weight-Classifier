@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI Calculator</title>
+</head>
+
+<body>        
+  
+  <div class="container">
+
+    <section id="gototop">
+    </section>
+
+      <header>
+        <h1 class="title">BMI Calculator</h1>
+        <div class="navbarparent">
+          <div class="navbarchild">
+          <a href="#About">About</a>
+          <a href="#Calculator">Calculator</a>
+          <a href="#Contactus">Contact_Us</a>
+          <a href="#Socialmedia">Social_Media</a>
+        </div>
+      </header>
+
+      <section id="Calculator"></section>
+        <div class="box">
+          <div class="content">
+            <br>
+            <h2>Enter your details here:</h2>
+            <div class="age">
+                <label for="age">Age</label>
+                <input type="text" class="text-input" id="age" autocomplete="off" required/>
+            </div>
+
+            <div class="gender">
+
+                <label class="container">
+                    <input type="radio" name="radio" id="m"><p class="text">Male</p>
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container">
+                    <input type="radio" name="radio" id="f" ><p class="text">Female</p>
+                      <span class="checkmark"></span>
+                    </label>
+
+            </div>
+
+          <div class="containerHeightWidth">
+
+            <div class="inputHeight">
+              <label for="height">Height(cm)</label>
+              <input type="number" id="height" required>
+            </div>
+
+            <div class="inputWeight">
+              <label for="weight">Weight(kg)</label>
+              <input type="number" id="weight" required>
+            </div>
+        </div>
+
+          <button class="calculate" id="submit" onclick="calculate();">Calculate BMI</button>
+      </div>
+          <div class="result">
+            <p>Your BMI is</p>
+            <div id="result">00.00</div>
+          <p class="comment"></p>
+            </div>
+          </div>
+
+<section id="About">
+      <div class="about">
+        <p>
+          <h1>About BMI:</h1>
+          A BMI (Body Mass Index) calculator is a valuable tool used to assess an individual's body composition and determine whether their weight falls within a healthy range relative to their height. By inputting essential information such as age, gender, height, and weight, the BMI calculator calculates an individual's BMI value, which is derived from a simple mathematical formula dividing weight in kilograms by height in meters squared. This resulting numerical value is then interpreted to categorize individuals into different BMI ranges, such as underweight, normal weight, overweight, or obese, providing insights into their overall health status. BMI calculators are widely utilized by healthcare professionals, fitness enthusiasts, and individuals seeking to monitor their weight and make informed decisions about their diet, exercise, and lifestyle habits. However, while BMI provides a useful initial assessment, it does not account for factors such as muscle mass, bone density, or overall body composition, and should be interpreted alongside other health metrics for a comprehensive understanding of an individual's health profile.
+        </p>
+        <br>
+        <div>
+          <img src="BMI-range.webp" class="rangeimg">
+      </div>
+
+        <br>
+
+        <div class="about1">
+          <p>
+          <h1>Why to use BMI calculator?</h1>
+          The BMI calculator is a useful tool for anyone interested in assessing their body composition and overall health status. Here are some reasons why individuals might choose to use this calculator:
+          <ol>
+          <li>Monitor Weight Status</li>
+          <li>Health Awareness</li>
+          <li>Guide for Weight Management</li>
+          <li>Health Risk Assessment</li>
+          <li>Fitness and Nutrition Planning</li>
+          <li>Medical Screening</li>
+          <li>Population Health Analysis</li>
+          </ol>
+          Overall, the BMI calculator serves as a valuable tool for promoting health awareness, guiding weight management efforts, and facilitating informed decision-making regarding diet, exercise, and lifestyle habits. However, it's essential to recognize that BMI is just one aspect of a person's health profile and should be interpreted alongside other health metrics for a comprehensive assessment.
+          </p>
+        </div> 
+
+        <br>
+
+        <div>
+          <img src="BMI-formula.jpg" class="image">
+        </div>
+      </div>
+  </section>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modalText"></p>
+      </div>
+    </div>
+
+  <footer>
+      <div class="footercontents"> 
+        <section id="Contactus">       
+              <h3>Contact Us:</h3>
+              <p>Email : rhythm.ghimire@deerwalk.edu.np</p>
+              <p>Office : 01-23456789</p>
+              <p>Phone : 9876543210</p>
+              <p>Address: Satdobato, Lalitpur</p>
+              <p>Branch Address: Sifal,Kathmandu</p>
+        </section>
+
+              <br>
+
+        <section id="Socialmedia">
+          <div class="socialmedia">
+              <h3 id="socials">Follow Our socials for various tips:</h3>
+              <a href="https://www.facebook.com/RhythmKGhimire"><img src="Facebook logo.png" class="smimage"></a>
+              <a href="https://www.instagram.com/Rhythm__Ghimire/?hl=en"><img src="Insta Logo.jpeg" class="smimage"></a>
+              <a href="mailto:rhythm.ghimire@deerwalk.edu.np"><img src="Gmail Logo.jpg" class="smimage"></a>         
+          </div>
+        </section>
+
+        <div class="navbarend">
+          <a href="#gototop"><p class="navend"><u>Go to Top</u></p></a>
+        </div>
+      </div>      
+</footer>
+    
+<script src="script.js"></script>
+
+</body>
+</html>

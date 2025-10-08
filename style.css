@@ -1,0 +1,326 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    margin:0;
+    padding:0;
+    background: #e5a4db;
+    text-align: center;
+    box-shadow: 2px 2px 20px 5px rgba(0,0,0,0.5);
+    margin-bottom:30px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgba(118, 190, 244, 0.9);
+}
+
+h1 {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 0;
+}
+
+.title {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbarparent {
+    text-align: right;
+    word-spacing: 13px;
+    font-size: large;
+}
+
+.rangeimg{
+    height: 350px;
+    width:450px;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+.about {
+    width: 90%;
+    background: #f4f4f4;
+    text-align: justify;
+    padding:10px;
+    box-shadow: 2px 2px 20px 5px rgba(197, 187, 237, 0.5);
+    margin-left: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+}
+
+.about1 {
+    width: 90%;
+    background: #f4f4f4;
+    text-align: justify;
+    padding:10px;    
+    margin-left: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;    
+}
+
+.box {
+    width: 40%;
+    background: #ece79e;
+    border-radius: 12px;
+    text-align: center;
+    margin-left:370px;
+    box-shadow: 2px 2px 20px 5px rgba(0,0,0,0.5);
+}
+
+.content {
+    padding: 0 30px;
+}
+
+.age {
+    background: #fff;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 20px 0;
+    margin-top:40px;
+    margin-bottom: 20px;
+}
+
+.age label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.age input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #4f7df9;
+    width: 50%;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Nunito", sans-serif;
+}
+
+.inputWeight, .inputHeight {
+    background: #fff;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.inputWeight label, .inputHeight label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.inputWeight input, .inputHeight input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #4f7df9;
+    width: 50%;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Nunito", sans-serif;
+}
+
+button.calculate {
+    cursor: pointer;
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+    background: rgb(97,138,254,1);
+    font-size: 16px;
+    border-radius: 7px;
+    padding: 12px 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    transition: all 0.5s;
+}
+
+button.calculate:hover {
+    background: #0044ff;
+}
+
+.result {
+    padding: 10px 20px;
+}
+
+.result p {
+    font-weight: 600;
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+#result {
+    font-size: 36px;
+    font-weight: 900;
+    color: #4f7df9;
+    background-color: #eaeaea;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+}
+
+.comment {
+    display: none;
+    border: 1px;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.gender {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background: #fff;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.gender .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 7px;
+    cursor: pointer;
+    font-size: 22px;    
+    user-select: none;
+}
+
+.gender .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.gender .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.gender .container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.gender .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.gender .container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.gender .container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.gender .container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.containerHeightWeight {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footercontents{
+    background-color: #333;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    color: aliceblue;
+    line-height: 30px;
+    margin-top: 30px;
+    width: 100%;
+    border-radius:12px;
+}
+.smimage{
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    margin-top: 30px;
+    justify-content: space-around;
+    margin-right: 50px;    
+}
+#socials{
+    text-align: center;
+    color: aliceblue;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 300px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: #393c76 -1px 2px 2px 1px;
+}
+
+#modalText {
+    padding-top: 8px;
+    padding-right: 5px;
+    font-size: 18px;
+    font-family: 'Poppins', sans;
+}
+
+footer{
+    background-color: #333;
+    border-bottom: 12px;
+    width:100%;
+}
+
+a{
+ color: black;
+ text-decoration: none;
+}
+
+.navend {
+    color: #eaeaea;
+    margin-top: 180px;
+    text-align: right;
+}
